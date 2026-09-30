@@ -1,0 +1,27 @@
+:root{
+    --color-accent: rgb(1, 255, 26);
+    --color-normal: Black;
+    --background-color: #ffb700;
+    --color-footer: Grey;
+    --fontfamily-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --fontsize-normal: 1rem;
+}
+
+body{
+
+    font-family: var(--fontfamily-normal);
+    font-size: var(--fontsize-normal);
+    color:var(--color-normal);
+    background-color: var(--background-color);
+
+}
+
+nav{
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+nav a:hover , nav a:focus{
+    color: var(--color-normal);
+    background-color: var(--color-accent);
+}
