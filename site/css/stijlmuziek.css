@@ -1,0 +1,48 @@
+:root{
+    --color-normal: rgb(9, 255, 0);
+    --color-accent: rgb(4, 255, 138);
+    --background-color: #000000;
+    --color-footer: Grey;
+    --color-purple: rgb(157, 0, 189);
+    --fontfamily-normal: Verdana, Geneva, Tahoma, sans-serif;
+    --fontsize-normal: 1rem;
+}
+
+body{
+
+    font-family: var(--fontfamily-normal);
+    font-size: var(--fontsize-normal);
+    color:var(--color-normal);
+    background-color: var(--background-color);
+
+}
+
+nav, nav a{
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+nav a:hover , nav a:focus{
+    color: var(--color-normal);
+    background-color: var(--color-footer);
+}
+
+main a{
+    color: var(--color-accent);
+}
+main h1, main h2, main h3{
+    color: var(--color-purple); ;
+}
+
+main a:hover , main a:focus{
+    color: var(--color-normal);
+    background-color: var(--color-footer);
+}
+
+footer{
+    text-align: center;
+    color: var(--color-footer)
+}
+ footer a{
+    color: var(--color-purple);
+ }

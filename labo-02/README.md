@@ -1,6 +1,6 @@
 # Labo 2 - reflecties
 
-Naam: (jouw naam)
+Naam: Elias Verelst
 
 ## 2. Selectors lezen
 
@@ -37,7 +37,9 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 ## 4. De nabouw
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
+nav a
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+Geen specifieke regel
 
 ## 6. Je site
 
