@@ -38,7 +38,28 @@ main a:hover , main a:focus{
     color: var(--color-normal);
     background-color: var(--color-footer);
 }
+main{
+    display: flex;
+    flex-direction: column; /* Zet onderdelen onder elkaar */
+    align-items: center;     /*центрует alles horizontaal in het midden*/
+    gap: 20px;              /* Optioneel: zorgt voor wat ruimte tussen je audio en afbeelding */
+}
 
+.verstoorde-afbeelding {
+    opacity: 0; /* Start onzichtbaar */
+    animation: fadeIn 30s ease-in-out 1s forwards; 
+    /* 
+      3s = 3 seconden wachten voordat de animatie begint
+      1s = de animatie duurt 1 seconde
+      forwards = zorgt dat de afbeelding zichtbaar blijft nadat de animatie klaar is
+    */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 
 footer{
     text-align: center;
