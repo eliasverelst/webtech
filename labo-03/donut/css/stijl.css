@@ -1,8 +1,37 @@
 /* stijl.css - labo 3, donut (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
-
+main{
+    background-color: #ec4b03;
+    width: 90vh;
+    height: 90vh;
+    border: 0.75rem solid black;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+div{
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    background-color: #b99ec1;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    border: 0.75rem solid black;
+    overflow: hidden;
 }
 
-/* === your rules === */
+h1{
+    font-size: 3rem;
+    font-family: Georgia, serif, bold;
+    font-weight: bolder;
+    background-color: #f9b700;
+    width: 90%;
+    height: 90%;
+    border: 0.75rem solid black;
+    padding-top: 10rem;
+    margin-left: -7%;
+    margin-top: -7%;
+}
