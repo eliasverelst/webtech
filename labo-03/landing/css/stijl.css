@@ -5,4 +5,79 @@
 
 }
 
-/* === your rules === */
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+    text-align: center;
+    background-color: #c8b8ff;
+    padding: 1rem;
+
+}
+.banner a{
+    color: #5551ff;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 1rem;
+    list-style: none;
+}
+nav ul{
+    text-align: right;
+    margin-right: 1rem;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    background-color: #779cee;
+    width: 98.95vw;
+    height: 90vh;
+}
+main div, main article{
+    display: inline-block;
+    vertical-align: top;
+}
+main div{
+    width: 25%;
+    padding-top: 4rem;
+}
+main article{
+    width: 50%;
+    padding-top: 1rem;
+}
+article p:nth-child(1){
+    font-size: 1.25rem;
+    width: 20rem;
+    margin-left: 4rem;
+    margin-bottom:1rem;
+    padding-top: 3rem;
+}
+
+article h1{
+    font-size: 2.5rem;
+    width: 30rem;
+    margin-left: 4rem;
+}
+article p~p{
+    font-size: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    line-height: 1.5rem;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+.knop{
+    margin-left: 4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
