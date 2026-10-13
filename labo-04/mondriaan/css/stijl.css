@@ -1,8 +1,25 @@
 /* stijl.css - labo 4, mondriaan (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
+main div:nth-child(1){background-color: #a090af; grid-column: 1/4; grid-row: 1/2;}
+main div:nth-child(2){background-color: #a16122;grid-column: 4/5; grid-row: 1/2;}
+main div:nth-child(3){background-color: #e7c948;grid-column: 1/2; grid-row: 2/3;}
+main div:nth-child(4){background-color: #13234e;grid-column: 4/5; grid-row: 2/3;}
+main div:nth-child(5){background-color: #ae9310;grid-column: 1/4; grid-row: 3/4;}
+main div:nth-child(6){background-color: #cd2424;grid-column: 4/5; grid-row: 3/4;}
 
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* three equal columns */
+    gap: 2vh;
+    border: 2vh solid #2554ab ;
+    background-color: #2554ab ;
 }
 
-/* === your rules === */
+.schilderij{
+    height: 70vh;
+    width: 70vh;
+    margin-top: 15vh; 
+    margin-bottom: 15vh;
+    margin-left: auto; 
+    margin-right: auto;
+}
