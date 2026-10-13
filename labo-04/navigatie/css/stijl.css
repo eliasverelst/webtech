@@ -1,0 +1,54 @@
+/* stijl.css - labo 4, navigatie (reset.css is linked before this file) */
+
+:root{
+    --accent-color: #e6b53c;
+}
+
+header{
+    background-color: #1f3a2e;
+    color: #f3efe6;
+    font-family: Verdana;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+header>nav:nth-child(2){
+    align-items: right;
+}
+
+li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-family: Verdana;
+}
+header>a{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: normal;
+    font-family: Verdana;
+}
+li>a{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+li>a:hover, li>a:focus{
+    border-radius: 0.5rem;
+    background-color: var(--accent-color);
+    color: #1f3a2e;
+}
+
+nav>ul{
+    display: flex;
+    gap: 0.5rem
+}
+li, header> a{
+    list-style: none;
+}
