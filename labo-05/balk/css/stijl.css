@@ -1,8 +1,73 @@
 /* stijl.css - labo 5, balk (reset.css is linked before this file) */
+body{background-color: #f8f7f5;color: #1a1a1a;}
+.intro{color: #6b6b6b;}
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: sticky;
+    top:0;
+}
+.actief{color: #ffffff;}
 
-/* === tokens === */
-:root {
+header a:focus, header a:hover{color: white;}
 
+html{scroll-padding-top: 3rem;}
+
+header>a{
+    text-decoration: none;
+    font-size:1.5rem;
+    color: white;
+    font-family: Georgia; 
+    font-weight: bold;
+    align-content: center;
+}
+ol{
+    margin-top:0;
+    padding-left:1rem;
+}
+ol a{
+    color: black;
 }
 
-/* === your rules === */
+ul{display: flex;list-style: none; gap:1.5rem }
+header li>a{
+    text-decoration: none;
+    color: #9a9a9a; 
+    font-size: 0.75rem;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    font-family: Arial;
+}
+
+main{
+    width: 44rem;
+    font-family: Verdana;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    line-height: 1.6;
+}
+section,ol{margin-bottom:3rem;}
+p,h2{margin-bottom:1rem;}
+
+h1,h2{font-family: Georgia;}
+h1{font-size: 2.5rem;}
+h2{font-size: 1.75rem;}
+
+footer{
+    background-color: black;
+    text-align: center;
+    align-content: center ;
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #9a9a9a;
+    font-size: .875rem;
+}
