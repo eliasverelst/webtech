@@ -1,8 +1,24 @@
 /* stijl.css - labo 5, fotolijst (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
-
+body{
+    background-color: #111111;
+    color: #f3efe6;
+    font-family: Verdana;
+    font-size: .875rem;
+    text-align: center;
+    width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
-/* === your rules === */
+img{aspect-ratio: 1 / 1;object-fit: cover;}
+figcaption{margin-top: 1rem;}
+
+.lijst{position: relative;}
+.vlakje{position: absolute; height: 6rem; width: 6rem;}
+.groen{background-color: #4e9a52;top: 2rem; left: 2rem;z-index: 1;}
+.roze{background-color: #f2a7d6;top: 5rem; left: 5rem;z-index: 2;}
+.lime{background-color: #b4f52d;bottom: 6rem; right: 6rem;z-index: 1;}
+.rood{background-color: #ea4d3d;bottom: 3rem; right: 3rem;z-index: 2;}
