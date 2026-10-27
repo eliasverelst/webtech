@@ -1,10 +1,16 @@
 /* stijl.css - labo 6, kleurvlakken (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
+main{display: grid;height: 100vh;grid-template-rows: repeat(4,1fr);}
 
+.rood{background-color: red;}
+.groen{background-color: green;}
+.geel{background-color: yellow;}
+.blauw{background-color: blue;}
+
+@media(min-width: 600px){
+    main{grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr;}
 }
 
-/* === base: narrow screens first === */
-
-/* === media queries: below the base rules === */
+@media(min-width: 800px){
+    main{grid-template-columns: repeat(2,1fr);grid-template-rows: repeat(2fr);}
+}

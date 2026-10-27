@@ -1,10 +1,94 @@
 /* stijl.css - labo 6, festival (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
-
+body{
+    background-color: #fff8ee;
+    color: #1a1a1a;
+    font-family: Verdana;
+    line-height: 1.6;
+}
+h1,h2{font-family: Georgia;}
+h1{font-size: clamp(2rem, 5vw + 1rem, 4rem);;line-height: 1.1}
+.logo{
+    font-size: 2rem; 
+    color: #d6341c; 
+    list-style: none;
+    text-align: center;
+    display: block;
+} 
+header{
+    margin: 0rem 1rem;
+    padding:2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
-/* === base: narrow screens first === */
+header ul{
+    display: flex; 
+    flex-direction: column; 
+    gap: .5rem;
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+a{text-decoration: none;}
+header li a{
+    display: block;
+    padding: .75rem 1.25rem;
+    border: 2px solid #d6341c;
+    border-radius: 2rem;
+    color: #d6341c;
+    font-weight: bold;
+    text-align: center;
+    width: 10rem;
+}
+nav a:hover, nav a:focus{background-color: white;color: darkred;}
+.actief{background-color: #d6341c;color: white;}
+main{display: flex;flex-direction: column;align-items: center;}
+.held{
+    background-color:#d6341c;
+    color: white;
+    padding: clamp(2rem,8vw,6rem ) clamp(1rem, 5vw, 4rem);
+    width: 100%;
+    
+}
+section:nth-child(2){width: 100%;max-width: 44rem;padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 5vw, 4rem) }
+.programma{
+    display: flex;
+    padding:0;
+    flex-direction: column;
+}
+.programma li{
+    border-bottom: 1px solid #e3d9c8;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+time{color: #d6341c;min-width: 4rem;font-weight: bold;}
+span{color: #6b6b6b;margin-left:auto;}
 
-/* === media queries: below the base rules === */
+footer{color:#6b6b6b;font-size: .875rem;text-align: center;padding-bottom: 1rem;}
+
+@media(min-width: 800px){
+    
+    header ul{
+    flex-direction: row;
+    }
+    {flex: }
+}
+
+@media(min-width: 1200px){
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    header ul{
+    flex-direction: row;
+    }
+}
