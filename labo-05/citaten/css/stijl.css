@@ -1,0 +1,31 @@
+/* stijl.css - labo 5, citaten (reset.css is linked before this file) */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1.5rem;
+}
+
+
+blockquote{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    font-family: Verdana;
+    flex-grow: 1;flex-shrink: 1;flex-basis: 18rem;
+    line-height: 1.5;
+}
+p{font-weight: bold; margin-bottom: 1rem;}
+cite{font-size: .875rem;}
+
+blockquote:nth-child(1){color: #1e5bd8;border-left: .5rem solid currentColor;}
+blockquote:nth-child(2){color: #e88bb4;border-left: .5rem solid currentColor;}
+blockquote:nth-child(3){color: #c51f2a;border-left: .5rem solid currentColor;}
+blockquote:nth-child(4){color: #d98c1a;border-left: .5rem solid currentColor;}
+blockquote:nth-child(5){color: #3b7a2a;border-left: .5rem solid currentColor;}
+blockquote:nth-child(6){color: #8fb89a;border-left: .5rem solid currentColor;}
+blockquote:nth-child(7){color: #7b4fa3;border-left: .5rem solid currentColor;}
+blockquote:nth-child(8){color: #6b6b6b;border-left: .5rem solid currentColor;}
