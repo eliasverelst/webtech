@@ -24,6 +24,7 @@ header ul{
 }
 nav a{text-decoration: none; color: var(--tekstingroen)}
 nav a:hover, nav a:focus{color: var(--accent)}
+.actief{color: var(--accent);}
 header>a{padding: 2rem;color: var(--accent);text-decoration: none;align-content: center;}
 header>nav:nth-child(2){
     padding: 1rem;
@@ -42,14 +43,13 @@ main ul {
     width: 60rem;
     margin-left: auto;
     margin-right: auto;
-    border: .1rem solid red;
 }
 h1{font-size: 2.5rem;font-weight:bold;}
 main ul{
     display: grid;
     gap: 1.5rem;
     list-style: none;
-    border: .1rem solid red;
+    padding: 0;
     
 }
 .soort, h1, h2,.logo{font-family: Georgia, 'Times New Roman', Times, serif;}
