@@ -77,16 +77,16 @@ main{
     margin: 1rem;
     width: fit-content;
     border-radius: 1rem;
-    background-color: #080808;
+    background-color: #111111;
     align-content: center;
 }
 .m{
     padding: 3rem;
     margin: 1rem;
-    width: clamp(1rem, 60% + 1rem, 50rem);
+    width: clamp(1rem, 60%, 40rem);
     border: .1rem solid grey;
     border-radius: 1rem;
-    background-color: #080808;
+    background-color: #111111;
     box-shadow: .1rem .1rem .8rem .1rem rgb(121, 120, 120);
 }
 .m ol{
@@ -98,6 +98,7 @@ main{
 }
 .m a{
     color: black;
+    font-size: clamp(1rem, 3vw, 2rem);
     text-decoration: none;
     padding: .5rem;
     background-color: var(--accent);
