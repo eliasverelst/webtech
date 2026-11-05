@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root{
     --accent: #0400e0;
     --balk: #000000;
@@ -58,9 +62,9 @@ nav ul{
 
 main{
     display: grid;
-    row-gap: 1rem;
-    grid-template-columns: 1fr 3fr;
-    padding: 2rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
     
 }
 .intro{
@@ -74,19 +78,19 @@ main{
 }
 
 .aside{
-    font-size: 3rem;
+    font-size: 1.2rem;
     color:#3d3b3b;
-    padding: 3rem 1rem;
-    margin: 1rem;
+    padding: 1rem .5rem;
+    margin: 0rem;
     width: fit-content;
     border-radius: 1rem;
     background-color: #111111;
     align-content: center;
 }
 .m{
-    padding: 3rem;
-    margin: 1rem;
-    width: clamp(1rem, 60%, 40rem);
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
     border: .1rem solid grey;
     border-radius: 1rem;
     background-color: #111111;
@@ -110,15 +114,15 @@ main{
     height: 100%;
     width: 100%;
 }
-.m h3{text-align: center; font-size: clamp(2rem, 6vw, 4rem);color: rgb(101, 6, 255); margin-bottom: 10rem;}
+.m h3{text-align: center; font-size: 1.5;color: rgb(101, 6, 255); margin-bottom: 2rem;}
 .m ol li{
     background-color: var(--accent);
     color: var(--grey);
     border-radius: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
     width: fit-content;
 }
 .button:hover, .button:focus{background-color: #02005a; color: grey;}
