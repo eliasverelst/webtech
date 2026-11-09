@@ -29,7 +29,11 @@ nav a:hover , nav a:focus{
 main a{
     color: var(--color-accent);
 }
-
+h1{
+    width: 10rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 0rem red;
+}
 main a:hover , main a:focus{
     color: var(--color-normal);
     background-color: var(--color-footer);
