@@ -1,0 +1,167 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --accent: #0400e0;
+    --balk: #000000;
+    --grey: #3c3b3d;
+}
+
+body{
+    background-color: black;
+    color: rgb(169, 216, 255);
+    font-family: 'Courier New', Courier, monospace;
+    margin:0;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--balk);
+    height: 10rem;
+    padding: 1rem;
+    
+}
+header a{text-decoration: none;}
+header li{
+    padding: .3rem .6rem;
+    border: .1rem solid black;
+    border-radius: .5rem;
+    background-color: #0213ff;
+}
+header li:hover{
+    background-color: aqua;
+}
+header li:focus{
+    background-color: aqua;
+}
+header li a{
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: 700;
+    color: black;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(112, 3, 255);
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding:0;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
+    
+}
+.intro{
+    background-color: #1a1919;
+    border-radius: 1rem;
+    padding:1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    grid-column: 1/-1;
+}
+
+.aside{
+    font-size: 1.2rem;
+    color:#3d3b3b;
+    padding: 1rem .5rem;
+    margin: 1rem 0;
+    width: fit-content;
+    border-radius: 1rem;
+    background-color: #111111;
+    align-content: center;
+}
+.m{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: .1rem solid grey;
+    border-radius: 1rem;
+    background-color: #111111;
+    box-shadow: .1rem .1rem .8rem .1rem rgb(121, 120, 120);
+}
+.m ol{
+    list-style: none;
+    padding:0;
+    display: flex;
+    flex-direction: column;       /* Keep items stacked vertically */
+    align-items: center;
+}
+.m a{
+    color: black;
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-decoration: none;
+    padding: .5rem;
+    background-color: var(--accent);
+    border-radius: 1rem;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.m h3{text-align: center; font-size: 1.5;color: rgb(101, 6, 255); margin-bottom: 2rem;}
+.m ol li{
+    background-color: var(--accent);
+    color: var(--grey);
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: fit-content;
+}
+.button:hover, .button:focus{background-color: #02005a; color: grey;}
+.afocus{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.focus{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.arock{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.rock{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.asfeer{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.sfeer{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    border-bottom: none;
+}
+
+main div:nth-child(3){}
+footer{
+    text-align: center;
+}
+
+@media(min-width: 1300px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 4rem;
+    }
+}

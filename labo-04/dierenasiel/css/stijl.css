@@ -24,6 +24,7 @@ header ul{
 }
 nav a{text-decoration: none; color: var(--tekstingroen)}
 nav a:hover, nav a:focus{color: var(--accent)}
+.actief{color: var(--accent);}
 header>a{padding: 2rem;color: var(--accent);text-decoration: none;align-content: center;}
 header>nav:nth-child(2){
     padding: 1rem;
