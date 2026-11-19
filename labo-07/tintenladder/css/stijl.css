@@ -2,9 +2,48 @@
 
 /* === tokens === */
 :root {
-
+    --papier: hsl(40 30% 97%);
+    --inkt: hsl(210 25% 12%);
+    --gedempt: hsl(210 10% 42%);
+    --hue: 210;
 }
 
-/* === base === */
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--papier);
+    color: var(--inkt);
+    header{
+            h1{font-family: Georgia;font-size: 1.5rem;}
+            p{font-size: .875rem;color: var(--gedempt);}
+            padding:2rem;
+            padding-left:1rem;
+            line-height: 1.2;
+        }   
 
-/* === the ten steps: one rule per step === */
+    main{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .trede{
+            align-content: center;
+            flex:1;
+            padding-left:1rem;
+            font-weight: bold;
+            font-size: .875rem;
+            font-family: Verdana;
+        }
+        div:nth-child(1){background-color:hsl(var(--hue) 55% 95%);}
+        div:nth-child(2){background-color:hsl(var(--hue) 55% 85%);}
+        div:nth-child(3){background-color:hsl(var(--hue) 55% 75%);}
+        div:nth-child(4){background-color:hsl(var(--hue) 55% 65%);}
+        div:nth-child(5){background-color:hsl(var(--hue) 55% 55%);}
+        div:nth-child(6){background-color:hsl(var(--hue) 55% 45%);color:var(--papier);}
+        div:nth-child(7){background-color:hsl(var(--hue) 55% 35%);color:var(--papier);}
+        div:nth-child(8){background-color:hsl(var(--hue) 55% 25%);color:var(--papier);}
+        div:nth-child(9){background-color:hsl(var(--hue) 55% 15%);color:var(--papier);}
+        div:nth-child(10){background-color:hsl(var(--hue) 55% 5%);color:var(--papier);}
+    }
+}
