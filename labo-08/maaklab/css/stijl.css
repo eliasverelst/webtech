@@ -1,0 +1,112 @@
+/* stijl.css - labo 8, maaklab (reset.css and fonts.css are linked before this file) */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+/* === tokens: colours, fonts, sizes, and one duration and one curve (8.1) === */
+:root {
+    --opp: hsl(210 20% 97%);
+    --inkt: hsl(215 30% 14%);
+    --gedempt: hsl(215 10% 42%);
+    --accent: hsl(215 70% 40%);
+    --donkeraccent: hsl(215 70% 30%);
+    --lijn: hsl(210 15% 84%);
+    --font: "Atkinson Hyperlegible", sans-serif;
+    --corner: .5rem;
+    --duur: 200ms;
+    --curve: ease-out;
+    --text-s: .8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl:  1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+    --space-xs: .25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+}
+
+body{
+    background-color: var(--opp);
+    color: var(--inkt);
+    font-family: var(--font);
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: var(--space-m) var(--space-l);
+        border-bottom: 1px solid var(--lijn);
+        align-items: center;
+        .naam{font-size: var(--text-l);font-weight: 700;}
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: var(--space-m);
+            li{
+                list-style-type: none;
+                a{
+                    position: relative;
+                    font-weight: 700;
+                    text-decoration: none;
+                    display: inline-block;
+                    margin: var(--space-xs) 0rem;
+                    color: var(--inkt);
+                    transition: color var(--duur) var(--curve);
+                }
+                a::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--accent);
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform var(--duur) var(--curve);
+                }
+                a:hover, a:focus{color: var(--accent);}
+                a:hover::after, a:focus::after{transform: scaleX(1);}
+            }
+            
+        }
+    }
+    main{
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: var(--space-xl) var(--space-l);
+        h2{
+            font-size: var(--text-xl);
+            font-weight: 700;
+            margin-bottom: var(--space-l);
+
+        }
+        h2::after {
+            content: "";
+            display: block;
+            width: 3rem;
+            height: 0.25rem;
+            background-color: var(--accent);
+            margin-top: var(--space-s);
+        }
+
+    }
+}
+
+@media (hover: hover) {
+
+}
+
+/* === footer === */
+
+/* === reduced motion (8.5) === */

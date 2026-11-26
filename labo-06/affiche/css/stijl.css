@@ -1,10 +1,96 @@
 /* stijl.css - labo 6, affiche (reset.css is linked before this file) */
 
-/* === tokens === */
-:root {
-
+body{background-color: #1d1d1b;color: #fff8ee;}
+.affiche{
+    background-color: #2554ab;
+    width: min(28rem, 100% - 2rem);
+    aspect-ratio: 3/4;
+    padding: clamp( 1.5rem, 6vw, 3rem);
+    margin: 2rem 1rem;
+    align-content: center;
+    position: relative;
+}
+h1{font-family: Georgia;font-size: clamp(2rem, 8vw, 3.5rem);line-height: 1.05;}
+p{font-size: .875rem;text-transform: uppercase;letter-spacing: .1em;}
+.sticker{
+    display: block;
+    width: clamp(4rem, 14vw, 7rem);
+    aspect-ratio: 1;
+    text-align: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: .75rem;
+    padding: 1rem;
+}
+.datum{
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+}
+.prijs{
+    background-color: #ffc83d;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    z-index: 2;
+}
+.logo{
+    background-color: #1d1d1b;
+    font-size: 1.25rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    z-index: 1;
+}
+.uitverkocht{
+    background-color: #d6341c   ;
+    border-radius: 50%;
+    position: absolute;
+    top: 5.5rem;
+    left: 5.5rem;
+    z-index: 2;
 }
 
-/* === base: narrow screens first === */
-
-/* === media queries: below the base rules === */
+@media(min-width: 800px){
+    body{display:flex;justify-content: center;}
+    .logo{
+        top:auto;left:auto;
+        bottom: 3rem;
+        right: 3rem;
+    }
+    .uitverkocht{
+        top:auto;left:auto;
+        bottom: 6rem;
+        right: 6rem;
+    }
+}
+@media(min-width: 1000px){
+    body{display:flex;justify-content: center;}
+    .datum{
+        bottom:auto;right:auto;
+        top: 2rem;
+        left: 2rem;
+    }
+    .prijs{
+        bottom:auto;left:auto;
+        top: 2rem;
+        right: 2rem;
+    }
+    .logo{
+        top:auto;right:auto;
+        bottom: 2rem;
+        left: 2rem;
+    }
+    .uitverkocht{
+        top:auto;left:auto;
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
