@@ -3,42 +3,42 @@
 @font-face {
 font-family: "Fraunces";
 src: url("../fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+font-style: normal;
 font-weight: 100 900; /* a variable font: every weight in one file */
 font-display: swap; /* show the fallback while the file loads */
 }
 @font-face {
-font-family: "Fraunces-italic";
+font-family: "Fraunces";
 src: url("../fonts/fraunces-latin-wght-italic.woff2") format("woff2");
 font-weight: 100 900; /* a variable font: every weight in one file */
 font-style: italic;
 font-display: swap; /* show the fallback while the file loads */
 }
 @font-face {
-font-family: "Atkinson-Hyperlegible-700";
+font-family: "Atkinson Hyperlegible";
 src: url("../fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
-font-weight: 100 900; /* a variable font: every weight in one file */
+font-style: normal;
+font-weight: 700; /* a variable font: every weight in one file */
 font-display: swap; /* show the fallback while the file loads */
 }
 @font-face {
-font-family: "Atkinson-Hyperlegible-400";
+font-family: "Atkinson Hyperlegible";
 src: url("../fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
-font-weight: 100 900; /* a variable font: every weight in one file */
+font-style: normal;
+font-weight: 400; /* a variable font: every weight in one file */
 font-display: swap; /* show the fallback while the file loads */
 }
 @font-face {
-font-family: "Atkinson-Hyperlegible-400-italic";
+font-family: "Atkinson Hyperlegible";
 src: url("../fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2");
 font-style: italic;
-font-weight: 100 900; /* a variable font: every weight in one file */
+font-weight: 400; /* a variable font: every weight in one file */
 font-display: swap; /* show the fallback while the file loads */
 }
 
 :root {
 --font-heading: "Fraunces", Georgia;
---font-heading-italic: "Fraunces-italic", Georgia italic;
---font-tekst-400: "Atkinson-Hyperlegible-400", Verdana;
---font-tekst-400-italic: "Atkinson-Hyperlegible-400-italic", Verdana;
---font-tekst-700: "Atkinson-Hyperlegible-700", Verdana;
+--font-body: "Atkinson Hyperlegible", Verdana, sans-serif;
 --text-s: .8rem;
 --text-m: 1rem;
 --text-l: 1.25rem;
@@ -51,7 +51,7 @@ font-display: swap; /* show the fallback while the file loads */
 --space-l: 2rem;
 --space-xl: 4rem;
 --oppervlak: hsl(40 30% 97%);
---oppervlak: hsl(40 30% 97%);
+--inkt: hsl(230 25% 15%);
 --gedempt: hsl(230 10% 42%);
 --accent: hsl(15 70% 42%);
 --lijn: hsl(230 15% 85%);
@@ -59,12 +59,16 @@ font-display: swap; /* show the fallback while the file loads */
 
 }
 body{
+    background-color: var(--oppervlak);
+    color: var(--inkt);
+    font-size: var(--text-m);
+    line-height: 1.5;
     justify-items: center;
+    font-family: var(--font-body);
     article { 
         max-width: 65ch;
         padding: var(--space-xl) var(--space-m);
         font-size: var(--text-m);
-        line-height: 1.5;
         p{margin-bottom: var(--space-m)};
         h1,h2,h3{font-family: var(--font-heading);}
         h2{
@@ -111,14 +115,16 @@ body{
             }
         }
         blockquote{
-            font-family: var(--font-heading-italic);
+            font-family: var(--font-heading);
+            font-style: italic;
+            font-size: var(--text-l);
             line-height: 1.4;
             border-left: 4px solid var(--accent);
             padding: var(--space-m);
             margin: var(--space-l) 0rem;
             footer{
-                font-family:var(--font-tekst-400);
                 font-size: var(--text-s);
+                font-family: var(--font-body);
                 color: var(--gedempt);
             }
         }
