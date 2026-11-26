@@ -16,15 +16,14 @@ body{
 
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: var(--balk);
-    height: 10rem;
+    min-height: 10rem;
     padding: 1rem;
-    
 }
 header a{text-decoration: none;}
 header li{
@@ -50,14 +49,15 @@ header li a{
     color: rgb(112, 3, 255);
     width: 100%;
 }
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     list-style: none;
-    padding:0;
+    padding: 0;
+    margin: 0;
 }
 
 main{
@@ -79,7 +79,7 @@ main{
 
 .aside{
     font-size: 1.2rem;
-    color:#3d3b3b;
+    color:#a7a5a5;
     padding: 1rem .5rem;
     margin: 1rem 0;
     width: fit-content;
@@ -164,4 +164,9 @@ footer{
         justify-content: space-between;
         height: 4rem;
     }
+    header ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{width: auto;}
 }
