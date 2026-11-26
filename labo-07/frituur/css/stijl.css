@@ -2,9 +2,39 @@
 
 /* === tokens: five colour roles in hsl (7.7) === */
 :root {
+    --opp-light: hsl(45 60% 96%);
+    --opp-dark: hsl(25 15% 10%);
+    --ink-light: hsl(25 30% 12%);
+    --ink-dark: hsl(40 30% 92%);
+    --gedempt-light: hsl(25 10% 40%);
+    --gedempt-dark: hsl(30 10% 70%);
+    --accent-light: hsl(22 85% 40%);
+    --accent-dark: hsl(32 90% 62%);
+    --lijn-light: hsl(40 25% 80%);
+    --lijn-dark: hsl(25 10% 28%);
 
-}
+    --text-s: .8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl:  1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+    --space-xs: .25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+    }
 
 /* === base === */
-
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    h2{font-family: Georgia, 'Times New Roman', Times, serif;}
+    header{
+        width:fit-content;
+        margin: var(--space-xl) auto var(--space-l);
+        border:.1rem solid red;
+    }
+}
 /* === dark mode: tokens only (7.9) === */
